@@ -1,0 +1,17 @@
+{
+    "Name": "Read EEG",
+    "BIDSVersion": "1.7.0",
+    "DatasetType": "raw",
+    "Authors": [
+        "Jiawei Li",
+        "Adrien Doerig",
+        "Radoslaw Martin Cichy"
+    ],
+    "GeneratedBy": [
+        {
+            "Name": "MNE-BIDS",
+            "Version": "0.17.0",
+            "CodeURL": "https://mne.tools/mne-bids/"
+        }
+    ]
+}
