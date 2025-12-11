@@ -23,10 +23,10 @@ Each run includes an **events file** with onsets, durations, trial types, and ev
 
 Participants viewed word stimuli forming naturalistic narratives, presented on a grey background with a central fixation cross.
 
-| Event Type | Event Code | Description |
-| :--- | :--- | :--- 
-| **Word Onsets** | `S111` | Onset of a word in a unique story
-| **Word Onsets** | `S71` | Onset of a word in a repeated story
+ Event Code | Event Type |
+| :--- | :--- 
+ `S111` | Onset of a word in a unique story
+ `S71` | Onset of a word in a repeated story
 
 ### Additional Triggers
 
