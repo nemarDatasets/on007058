@@ -35,27 +35,52 @@ Trigger | Type |
 
 ---
 
-## Processed Data (in `./derivatives`)
+# Derivatives
 
-Processed data files are stored in the **`./derivatives`** folder.
+Processed data files are stored in the `./derivatives` folder.  
+This folder contains the processed EEG, as well as the accompanying meta-data and feature embeddings.
 
-### Processed EEG Data
+## MetaData
 
-The preprocessed EEG signals are located in:` ./derivatives/sub-XXXX/` 
+The following files are found in the `./derivatives/MetaData/` sub-folder:
 
-Data are organized by channel, each with:
+### Story–Run–Session Match Table
+**Path:** `./derivatives/MetaData/session_story_run`  
+**Description:**  
+A table matching each recording session to the specific story and run it contains.
 
-* **Shape:** `(nWords, nTimepoints)`
+### Story Indexes for Each Epoch
+**Path:** `./derivatives/MetaData/story_epoch_match`  
+**Description:**  
+Provides the specific story index corresponding to each epoch in the processed EEG data.
 
-### Corresponding Features
+### Expected Index for Each Epoch
+**Path:** `./derivatives/MetaData/expect_or_not`  
+**Description:**  
+Indicates whether the epoch was expected or unexpected.  
+**Values:**  
+- `1` = expected  
+- `0` = unexpected
 
-Feature representations are stored in:
+## Processed EEG Data
 
-`./derivatives/Features/` 
+The preprocessed EEG signals are located in: `./derivatives/eeg_processed/`
 
-They follow the same word-level indexing as the EEG data:
 
-* **Shape:** `(nWords,)`
+Data are organized by channel, where each channel file has the following specifications:
+
+- **Shape:** `(nWords, nTimepoints)`  
+- **nWords:** number of words (epochs)  
+- **nTimepoints:** number of time points per epoch
+
+## Corresponding Feature Embeddings
+
+Feature (embeddings) are stored in: `./derivatives/Features/`
+
+These feature files follow the same word-level indexing (`nWords`) as the EEG data:
+
+- **Shape:** `(nWords,)`  
+- **nWords:** number of words (epochs) in the EEG data
 
 ---
 
