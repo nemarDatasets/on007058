@@ -21,12 +21,12 @@ Each run includes an **events file** with onsets, durations, trial types, and ev
 
 ### Stimulus Presentation
 
-Participants viewed word stimuli forming naturalistic narratives, presented in **lowercase on a grey background** with a central fixation cross.
+Participants viewed word stimuli forming naturalistic narratives, presented on a grey background with a central fixation cross.
 
-| Event Type | Event Code | Description |
+| Event Type | Event Code | Description |Story Type |
 | :--- | :--- | :--- |
-| **Word Onsets** (Unique stories) | `S111` | Onset of a word in a unique story. |
-| **Word Onsets** (Repeated stories) | `S71` | Onset of a word in a repeated story. |
+| **Word Onsets** | `S111` | Onset of a word in a unique story. |Unique stories
+| **Word Onsets** | `S71` | Onset of a word in a repeated story. |Repeated stories
 
 ### Additional Triggers
 
@@ -37,25 +37,21 @@ Participants viewed word stimuli forming naturalistic narratives, presented in *
 
 ## Processed Data (in `./derivatives`)
 
-Processed data files are stored in the **`./derivatives`** folder, following BIDS conventions.
+Processed data files are stored in the **`./derivatives`** folder.
 
 ### Processed EEG Data
 
-The preprocessed EEG signals are located in:
-
-`./derivatives/sub-XX/ses-YY/eeg/sub-XX_ses-YY_task-story_run-ZZ_desc-preproc_eeg.npy` (Example path)
+The preprocessed EEG signals are located in:` ./derivatives/sub-XXXX/` 
 
 Data are organized by channel, each with:
 
 * **Shape:** `(nWords, nTimepoints)`
-* Each **row** = one word
-* Each **column** = one timepoint
 
 ### Corresponding Features
 
 Feature representations are stored in:
 
-`./derivatives/Features/sub-XX_ses-YY_task-story_run-ZZ_desc-features_features.npy` (Example path)
+`./derivatives/Features/` 
 
 They follow the same word-level indexing as the EEG data:
 
