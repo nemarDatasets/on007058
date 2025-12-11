@@ -35,26 +35,26 @@ Trigger | Type |
 
 ---
 
-# Derivatives
+## Derivatives
 
 Processed data files are stored in the `./derivatives` folder.  
 This folder contains the processed EEG, as well as the accompanying meta-data and feature embeddings.
 
-## MetaData
+### MetaData
 
 The following files are found in the `./derivatives/MetaData/` sub-folder:
 
-### Story–Run–Session Match Table
+#### Story–Run–Session Match Table
 **Path:** `./derivatives/MetaData/session_story_run`  
 **Description:**  
 A table matching each recording session to the specific story and run it contains.
 
-### Story Indexes for Each Epoch
+#### Story Indexes for Each Epoch
 **Path:** `./derivatives/MetaData/story_epoch_match`  
 **Description:**  
 Provides the specific story index corresponding to each epoch in the processed EEG data.
 
-### Expected Index for Each Epoch
+#### Expected Index for Each Epoch
 **Path:** `./derivatives/MetaData/expect_or_not`  
 **Description:**  
 Indicates whether the epoch was expected or unexpected.  
@@ -62,7 +62,7 @@ Indicates whether the epoch was expected or unexpected.
 - `1` = expected  
 - `0` = unexpected
 
-## Processed EEG Data
+### Processed EEG Data
 
 The preprocessed EEG signals are located in: `./derivatives/eeg_processed/`
 
@@ -73,7 +73,7 @@ Data are organized by channel, where each channel file has the following specifi
 - **nWords:** number of words (epochs)  
 - **nTimepoints:** number of time points per epoch
 
-## Corresponding Feature Embeddings
+### Corresponding Feature Embeddings
 
 Feature (embeddings) are stored in: `./derivatives/Features/`
 
