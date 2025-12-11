@@ -1,6 +1,69 @@
-﻿References
-----------
-Appelhoff, S., Sanderson, M., Brooks, T., Vliet, M., Quentin, R., Holdgraf, C., Chaumon, M., Mikulan, E., Tavabi, K., Höchenberger, R., Welke, D., Brunner, C., Rockhill, A., Larson, E., Gramfort, A. and Jas, M. (2019). MNE-BIDS: Organizing electrophysiological data into the BIDS format and facilitating their analysis. Journal of Open Source Software 4: (1896).https://doi.org/10.21105/joss.01896
+# README: EEG Dataset for "Auditory representations of words during silent visual reading"
 
-Pernet, C. R., Appelhoff, S., Gorgolewski, K. J., Flandin, G., Phillips, C., Delorme, A., Oostenveld, R. (2019). EEG-BIDS, an extension to the brain imaging data structure for electroencephalography. Scientific Data, 6, 103.https://doi.org/10.1038/s41597-019-0104-8
+This dataset contains the raw EEG data accompanying the paper.
+If you use these data in your research, please cite the above paper.
 
+---
+
+## Dataset Description
+
+The dataset includes raw EEG recordings in **BrainVision format**:
+
+* `.eeg`
+* `.vhdr`
+* `.vmrk`
+
+All participants’ data follow the **BIDS (Brain Imaging Data Structure)** specification.
+
+### Event Annotations
+
+Each run includes an **events file** with onsets, durations, trial types, and event values for all trials.
+
+### Stimulus Presentation
+
+Participants viewed word stimuli forming naturalistic narratives, presented in **lowercase on a grey background** with a central fixation cross.
+
+| Event Type | Event Code | Description |
+| :--- | :--- | :--- |
+| **Word Onsets** (Unique stories) | `S111` | Onset of a word in a unique story. |
+| **Word Onsets** (Repeated stories) | `S71` | Onset of a word in a repeated story. |
+
+### Additional Triggers
+
+* **Run onset:** `S71`
+* **Run end:** `S78`
+
+---
+
+## Processed Data (in `./derivatives`)
+
+Processed data files are stored in the **`./derivatives`** folder, following BIDS conventions.
+
+### Processed EEG Data
+
+The preprocessed EEG signals are located in:
+
+`./derivatives/sub-XX/ses-YY/eeg/sub-XX_ses-YY_task-story_run-ZZ_desc-preproc_eeg.npy` (Example path)
+
+Data are organized by channel, each with:
+
+* **Shape:** `(nWords, nTimepoints)`
+* Each **row** = one word
+* Each **column** = one timepoint
+
+### Corresponding Features
+
+Feature representations are stored in:
+
+`./derivatives/Features/sub-XX_ses-YY_task-story_run-ZZ_desc-features_features.npy` (Example path)
+
+They follow the same word-level indexing as the EEG data:
+
+* **Shape:** `(nWords,)`
+
+---
+
+## References
+
+* Appelhoff, S., Sanderson, M., Brooks, T., Vliet, M., Quentin, R., Holdgraf, C., Chaumon, M., Mikulan, E., Tavabi, K., Höchenberger, R., Welke, D., Brunner, C., Rockhill, A., Larson, E., Gramfort, A., & Jas, M. (2019). **MNE-BIDS: Organizing electrophysiological data into the BIDS format and facilitating their analysis.** *Journal of Open Source Software, 4*(1896). [https://doi.org/10.21105/joss.01896](https://doi.org/10.21105/joss.01896)
+* Pernet, C. R., Appelhoff, S., Gorgolewski, K. J., Flandin, G., Phillips, C., Delorme, A., & Oostenveld, R. (2019). **EEG-BIDS, an extension to the brain imaging data structure for electroencephalography.** *Scientific Data, 6*, 103. [https://doi.org/10.1038/s41597-019-0104-8](https://doi.org/10.1038/s41597-019-0104-8)
