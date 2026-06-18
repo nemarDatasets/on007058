@@ -1,0 +1,36 @@
+data:
+  attributes:
+    types:
+      resourceTypeGeneral: Dataset
+    contributors:
+      - name: Jiawei Li
+        givenName: ''
+        familyName: ''
+        nameType: Personal
+        nameIdentifiers: []
+        contributorType: Researcher
+        order: 1
+      - name: Adrien Doerig
+        givenName: ''
+        familyName: ''
+        nameType: Personal
+        nameIdentifiers: []
+        contributorType: Researcher
+        order: 2
+      - name: Radoslaw Martin Cichy
+        givenName: ''
+        familyName: ''
+        nameType: Personal
+        nameIdentifiers: []
+        contributorType: Researcher
+        order: 3
+    creators:
+      - name: Jiawei Li
+        nameType: Personal
+      - name: Adrien Doerig
+        nameType: Personal
+      - name: Radoslaw Martin Cichy
+        nameType: Personal
+    descriptions:
+      - description: N/A
+        descriptionType: Abstract
