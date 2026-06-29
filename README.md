@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on007058-blue)](https://doi.org/10.82901/nemar.on007058)
+
 # EEG Dataset for "Auditory representations of words during silent visual reading"
 
 This dataset contains the raw and processed EEG data accompanying the paper.
