@@ -3,7 +3,7 @@
   "pipeline_stage": "validated",
   "title": "Silent Visual Reading EEG",
   "description": "This dataset contains raw and processed EEG recordings from participants engaged in silent visual reading of word stimuli presented in naturalistic narrative contexts. The study investigates auditory representations of words during reading by recording neural activity while participants view unique and repeated story narratives. The dataset includes BrainVision format EEG files, event annotations with stimulus triggers, preprocessed signals organized by channel, and corresponding feature embeddings for word-level analysis.",
-  "methods_description": "EEG data were collected while participants viewed word stimuli forming naturalistic narratives presented on a grey background with central fixation. Stimulus presentation included trigger markers for word onsets in unique stories (S111) and repeated stories (S71), with run onset (S71) and run end (S78) markers. Data were recorded in BrainVision format and preprocessed with channel-wise organization, maintaining word-level (epoch) structure aligned with feature embeddings.",
+  "methods_description": "EEG data were collected while participants viewed word stimuli forming naturalistic narratives presented on a grey background with central fixation. Stimulus presentation included trigger markers for word onsets in unique stories (S111) and repeated stories (S71), with run onset (S71) and run end (S78) markers. Data are provided in BrainVision format (.eeg, .vhdr, .vmrk files) organized according to BIDS specification.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
