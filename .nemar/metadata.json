@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Silent Visual Reading EEG",
+  "description": "This dataset contains raw and processed EEG recordings from participants engaged in silent visual reading of word stimuli presented in naturalistic narrative contexts. The study investigates auditory representations of words during reading by recording neural activity while participants view unique and repeated story narratives. The dataset includes BrainVision format EEG files, event annotations with stimulus triggers, preprocessed signals organized by channel, and corresponding feature embeddings for word-level analysis.",
+  "methods_description": "EEG data were collected while participants viewed word stimuli forming naturalistic narratives presented on a grey background with central fixation. Stimulus presentation included trigger markers for word onsets in unique stories (S111) and repeated stories (S71), with run onset (S71) and run end (S78) markers. Data were recorded in BrainVision format and preprocessed with channel-wise organization, maintaining word-level (epoch) structure aligned with feature embeddings.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,12 +11,27 @@
     "Adrien Doerig": {},
     "Radoslaw Martin Cichy": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds007058.v1.1.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "silent reading"
+    },
+    {
+      "term": "word processing"
+    },
+    {
+      "term": "narrative comprehension"
+    },
+    {
+      "term": "auditory representations"
+    },
+    {
+      "term": "event-related potentials"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on007058",
       "identifier_type": "URL",
@@ -34,15 +51,20 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds007058.v1.1.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "37.9 GB (2007 files)"
   ],
   "formats": [
     ".DS_Store",
@@ -57,45 +79,5 @@
     ".vmrk",
     ".yml"
   ],
-  "description": "This dataset contains raw and processed EEG recordings from participants engaged in silent visual reading of word stimuli presented in naturalistic narrative contexts. The study investigates auditory representations of words during silent visual reading by recording neural activity while participants view unique and repeated story narratives. Raw data are provided in BrainVision format with comprehensive event annotations, alongside preprocessed EEG signals and corresponding feature embeddings organized at the word level.",
-  "methods_description": "EEG data were collected while participants viewed word stimuli forming naturalistic narratives presented on a grey background with central fixation. Trigger codes marked word onsets in unique (S111) and repeated (S71) stories, with run onset (S71) and end (S78) markers. Raw data are provided in BrainVision format (.eeg, .vhdr, .vmrk files) organized according to BIDS specification. Preprocessed EEG signals and word-level feature embeddings are provided in the derivatives folder.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "silent reading"
-    },
-    {
-      "term": "silent visual reading"
-    },
-    {
-      "term": "word processing"
-    },
-    {
-      "term": "narrative comprehension"
-    },
-    {
-      "term": "naturalistic narratives"
-    },
-    {
-      "term": "auditory representations"
-    },
-    {
-      "term": "event-related potentials"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "BrainVision"
-    },
-    {
-      "term": "neural language processing"
-    },
-    {
-      "term": "derivatives"
-    }
-  ],
-  "source_hash": "7ce0d2e3895919dffa7bb199b42407dae5031f30223e22dfb948ad7a3e4676a4"
+  "source_hash": "046c602e94a702755b7e0dc82fed09b8c0176e719483c6abbbab8b6a4f4a9916"
 }
