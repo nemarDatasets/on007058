@@ -1,1 +1,19 @@
-.git/annex/objects/3x/4w/SHA256E-s448--0e4542da0374858d636c99873c84cc3873b4bcf55dc0ec3d580820bf7d6f4299.json/SHA256E-s448--0e4542da0374858d636c99873c84cc3873b4bcf55dc0ec3d580820bf7d6f4299.json
+{
+    "Name": "Silent Visual Reading EEG",
+    "BIDSVersion": "1.7.0",
+    "DatasetType": "raw",
+    "Authors": [
+        "Jiawei Li",
+        "Adrien Doerig",
+        "Radoslaw Martin Cichy"
+    ],
+    "GeneratedBy": [
+        {
+            "Name": "MNE-BIDS",
+            "Version": "0.17.0",
+            "CodeURL": "https://mne.tools/mne-bids/"
+        }
+    ],
+    "License": "CC0",
+    "DatasetDOI": "doi:10.18112/openneuro.ds007058.v1.1.0"
+}
