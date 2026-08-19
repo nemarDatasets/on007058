@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Silent Visual Reading EEG",
-  "description": "This dataset contains raw and processed EEG recordings from participants engaged in silent visual reading of word stimuli presented in naturalistic narrative contexts. The study investigates auditory representations of words during reading by recording neural activity while participants view unique and repeated story narratives. The dataset includes BrainVision format EEG files, event annotations with stimulus triggers, preprocessed signals organized by channel, and corresponding feature embeddings for word-level analysis.",
-  "methods_description": "EEG data were collected while participants viewed word stimuli forming naturalistic narratives presented on a grey background with central fixation. Stimulus presentation included trigger markers for word onsets in unique stories (S111) and repeated stories (S71), with run onset (S71) and run end (S78) markers. Data are provided in BrainVision format (.eeg, .vhdr, .vmrk files) organized according to BIDS specification.",
+  "description": "This dataset contains raw and processed EEG recordings from participants performing silent visual reading of naturalistic narrative stories, investigating auditory representations of words during silent reading. Data include BrainVision-format EEG recordings organized according to BIDS, along with derivative processed EEG signals, metadata linking sessions to stories and runs, and word-level feature embeddings.",
+  "methods_description": "EEG data were recorded in BrainVision format (.eeg, .vhdr, .vmrk) while participants viewed word stimuli forming naturalistic narratives on a grey background with a central fixation cross. Event annotations mark word onsets in unique and repeated stories, as well as run onset and offset triggers. Processed derivatives include epoch-level EEG data organized by channel, metadata tables matching sessions to stories and runs, and story/expectation indices for each epoch.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,16 +19,16 @@
       "term": "silent reading"
     },
     {
+      "term": "language comprehension"
+    },
+    {
       "term": "word processing"
     },
     {
-      "term": "narrative comprehension"
+      "term": "auditory representation"
     },
     {
-      "term": "auditory representations"
-    },
-    {
-      "term": "event-related potentials"
+      "term": "BIDS"
     }
   ],
   "related_identifiers": [
@@ -45,12 +45,12 @@
     {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "References"
     },
     {
       "identifier": "10.18112/openneuro.ds007058.v1.1.0",
