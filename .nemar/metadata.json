@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Silent Visual Reading EEG",
-  "description": "This dataset contains raw and processed EEG recordings from participants performing silent visual reading of naturalistic narrative stories, investigating auditory representations of words during silent reading. Data include BrainVision-format EEG recordings organized according to BIDS, along with derivative processed EEG signals, metadata linking sessions to stories and runs, and word-level feature embeddings.",
-  "methods_description": "EEG data were recorded in BrainVision format (.eeg, .vhdr, .vmrk) while participants viewed word stimuli forming naturalistic narratives on a grey background with a central fixation cross. Event annotations mark word onsets in unique and repeated stories, as well as run onset and offset triggers. Processed derivatives include epoch-level EEG data organized by channel, metadata tables matching sessions to stories and runs, and story/expectation indices for each epoch.",
+  "description": "This dataset contains raw EEG recordings, in BrainVision format and organized according to BIDS, from participants silently reading word-by-word naturalistic narratives. It accompanies a study of auditory representations of words evoked during silent visual reading. Derivatives include preprocessed word-level EEG epochs, story and run metadata, expected/unexpected epoch labels, and corresponding feature embeddings.",
+  "methods_description": "Participants viewed words forming naturalistic stories, presented one at a time on a grey background with a central fixation cross, while EEG was recorded with BrainVision. Triggers mark word onsets in unique versus repeated stories, as well as run onset and run end. Preprocessed data are provided as per-channel arrays of words by time points.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,16 +19,16 @@
       "term": "silent reading"
     },
     {
-      "term": "language comprehension"
+      "term": "visual word presentation"
     },
     {
-      "term": "word processing"
+      "term": "naturalistic narratives"
     },
     {
-      "term": "auditory representation"
+      "term": "language processing"
     },
     {
-      "term": "BIDS"
+      "term": "auditory representations"
     }
   ],
   "related_identifiers": [
@@ -64,7 +64,7 @@
     "eeg"
   ],
   "sizes": [
-    "37.9 GB (2007 files)"
+    "35.29 GB (2007 files)"
   ],
   "formats": [
     ".DS_Store",
